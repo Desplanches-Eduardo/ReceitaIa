@@ -1,0 +1,62 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Dados sensíveis ###
+.env
+.env.*
+*.env
+application-local.properties
+application-local.yml
+application-local.yaml
+application-secret*.properties
+application-secret*.yml
+*-secret*.properties
+*-secret*.yml
+src/main/resources/application-prod*.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.p8
+secrets/
+private/
+
+### Banco local e logs ###
+*.mv.db
+*.trace.db
+*.lock.db
+*.log
+logs/
