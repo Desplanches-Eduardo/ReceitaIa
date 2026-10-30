@@ -11,7 +11,7 @@ public class FoodItemMapper {
         FoodItemModel foodItemModel = new FoodItemModel();
         foodItemModel.setId(foodItemDTO.getId());
         foodItemModel.setNome(foodItemDTO.getNome());
-        foodItemModel.setCategorias(foodItemDTO.getCategorias());
+        foodItemModel.setCategoria(foodItemDTO.getCategoria());
         foodItemModel.setQuantidade(foodItemDTO.getQuantidade());
         foodItemModel.setValidade(foodItemDTO.getValidade());
         return foodItemModel;
@@ -21,7 +21,7 @@ public class FoodItemMapper {
         FoodItemDTO foodItemDTO = new FoodItemDTO();
         foodItemDTO.setId(foodItemModel.getId());
         foodItemDTO.setNome(foodItemModel.getNome());
-        foodItemDTO.setCategorias(foodItemModel.getCategorias());
+        foodItemDTO.setCategoria(foodItemModel.getCategoria());
         foodItemDTO.setQuantidade(foodItemModel.getQuantidade());
         foodItemDTO.setValidade(foodItemModel.getValidade());
         return foodItemDTO;

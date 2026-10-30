@@ -45,10 +45,10 @@ Exemplo de cadastro:
 ```bash
 curl -X POST http://localhost:8080/food \
   -H 'Content-Type: application/json' \
-  -d '{"nome":"Arroz","categorias":"CEREAIS","quantidade":3,"validade":"2027-04-27"}'
+  -d '{"nome":"Arroz","categoria":"CEREAIS","quantidade":3,"validade":"2027-04-27"}'
 ```
 
-A categoria vem do enum `Categorias` (cereais, tubérculos, leguminosas, verduras, legumes, frutas,
+A categoria vem do enum `Categoria` (cereais, tubérculos, leguminosas, verduras, legumes, frutas,
 proteínas, gorduras, doces, bebidas e temperos) e é gravada no banco como texto.
 
 ## Banco de dados
@@ -69,7 +69,7 @@ src/main/java/Desplanchescom/example/ReceitaIa/
 ├── Mapper/       FoodItemMapper       conversão entidade <-> DTO
 ├── DTO/          FoodItemDTO          dados que entram e saem da API
 ├── model/        FoodItemModel        entidade JPA
-└── enums/        Categorias           categorias de alimento
+└── enums/        Categoria            categoria de alimento
 src/main/resources/
 ├── application.properties
 └── db/migration/  migrations do Flyway
