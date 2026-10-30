@@ -1,6 +1,6 @@
 package Desplanchescom.example.ReceitaIa.model;
 
-import Desplanchescom.example.ReceitaIa.enums.Categorias;
+import Desplanchescom.example.ReceitaIa.enums.Categoria;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -18,7 +18,7 @@ public class FoodItemModel {
     private String nome;
     @Enumerated(EnumType.STRING)
     @Column(name = "categoria", nullable = false, length = 100)
-    private Categorias categorias;
+    private Categoria categoria;
     private Integer quantidade;
     private LocalDate validade;
 
@@ -38,12 +38,12 @@ public class FoodItemModel {
         this.nome = nome;
     }
 
-    public Categorias getCategorias() {
-        return categorias;
+    public Categoria getCategoria() {
+        return categoria;
     }
 
-    public void setCategorias(Categorias categorias) {
-        this.categorias = categorias;
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 
     public Integer getQuantidade() {

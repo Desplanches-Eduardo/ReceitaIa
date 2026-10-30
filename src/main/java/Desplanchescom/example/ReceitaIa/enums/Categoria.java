@@ -1,13 +1,13 @@
 package Desplanchescom.example.ReceitaIa.enums;
 
-public enum Categorias {
+public enum Categoria {
     CEREAIS,
-    TUBÉRCULOS,
+    TUBERCULOS,
     LEGUMINOSAS,
     VERDURAS,
     LEGUMES,
     FRUTAS,
-    PROTEÍNAS,
+    PROTEINAS,
     GORDURAS,
     DOCES,
     BEBIDAS,
