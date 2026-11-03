@@ -61,3 +61,6 @@ private/
 *.lock.db
 *.log
 logs/
+
+### Banco H2 em arquivo (dados locais)
+data/

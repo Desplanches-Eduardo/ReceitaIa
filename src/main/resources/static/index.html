@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReceitaIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="azulejos" aria-hidden="true"></div>
+    <div class="topo-texto">
+      <h1>ReceitaIA</h1>
+      <p>Cadastre o que tem na despensa e peça uma receita com o que vence primeiro.</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="despensa" aria-labelledby="titulo-despensa">
+      <div class="secao-cabeca">
+        <h2 id="titulo-despensa">Sua despensa</h2>
+        <span class="contador" id="contador"></span>
+      </div>
+
+      <form id="form-alimento" class="form" autocomplete="off">
+        <input type="hidden" id="campo-id">
+        <div class="campo campo-nome">
+          <label for="campo-nome">Alimento</label>
+          <input id="campo-nome" required maxlength="255" placeholder="Ex.: Arroz branco">
+        </div>
+        <div class="campo">
+          <label for="campo-categoria">Categoria</label>
+          <select id="campo-categoria" required></select>
+        </div>
+        <div class="campo campo-curto">
+          <label for="campo-quantidade">Quantidade</label>
+          <input id="campo-quantidade" type="number" min="0" step="1" required value="1">
+        </div>
+        <div class="campo">
+          <label for="campo-validade">Validade</label>
+          <input id="campo-validade" type="date" required>
+        </div>
+        <div class="form-acoes">
+          <button type="submit" class="btn btn-principal" id="btn-salvar">Adicionar à despensa</button>
+          <button type="button" class="btn btn-texto" id="btn-cancelar" hidden>Cancelar edição</button>
+        </div>
+      </form>
+
+      <p class="aviso" id="aviso" role="status" aria-live="polite"></p>
+
+      <div id="prateleiras" class="prateleiras"></div>
+    </section>
+
+    <section class="receita" aria-labelledby="titulo-receita">
+      <div class="receita-moldura">
+        <div class="receita-corpo">
+          <h2 id="titulo-receita">Receita do chef</h2>
+          <p class="receita-dica">O chef usa os alimentos da sua despensa e dá preferência aos que vencem antes.</p>
+          <button type="button" class="btn btn-gema" id="btn-gerar">Gerar receita</button>
+          <div id="receita-status" class="receita-status" role="status" aria-live="polite"></div>
+          <article id="receita-texto" class="receita-texto"></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,529 @@
+{
+  "info": {
+    "name": "ReceitaIa - Seed de comidas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ],
+  "item": [
+    {
+      "name": "POST Arroz branco",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Arroz branco\",\n  \"categoria\": \"CEREAIS\",\n  \"quantidade\": 5,\n  \"validade\": \"2027-06-30\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Feijão carioca",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Feijão carioca\",\n  \"categoria\": \"LEGUMINOSAS\",\n  \"quantidade\": 3,\n  \"validade\": \"2027-03-15\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Batata",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Batata\",\n  \"categoria\": \"TUBERCULOS\",\n  \"quantidade\": 8,\n  \"validade\": \"2026-11-20\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Alface",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Alface\",\n  \"categoria\": \"VERDURAS\",\n  \"quantidade\": 1,\n  \"validade\": \"2026-11-07\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Tomate",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Tomate\",\n  \"categoria\": \"LEGUMES\",\n  \"quantidade\": 6,\n  \"validade\": \"2026-11-12\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Cenoura",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Cenoura\",\n  \"categoria\": \"LEGUMES\",\n  \"quantidade\": 4,\n  \"validade\": \"2026-11-25\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Banana",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Banana\",\n  \"categoria\": \"FRUTAS\",\n  \"quantidade\": 12,\n  \"validade\": \"2026-11-09\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Ovo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Ovo\",\n  \"categoria\": \"PROTEINAS\",\n  \"quantidade\": 12,\n  \"validade\": \"2026-11-28\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Peito de frango",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Peito de frango\",\n  \"categoria\": \"PROTEINAS\",\n  \"quantidade\": 2,\n  \"validade\": \"2026-11-10\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Azeite de oliva",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Azeite de oliva\",\n  \"categoria\": \"GORDURAS\",\n  \"quantidade\": 1,\n  \"validade\": \"2027-12-31\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Chocolate amargo",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Chocolate amargo\",\n  \"categoria\": \"DOCES\",\n  \"quantidade\": 2,\n  \"validade\": \"2027-02-28\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Suco de laranja",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Suco de laranja\",\n  \"categoria\": \"BEBIDAS\",\n  \"quantidade\": 1,\n  \"validade\": \"2026-11-15\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Alho",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Alho\",\n  \"categoria\": \"TEMPEROS\",\n  \"quantidade\": 10,\n  \"validade\": \"2026-12-20\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST Cebola",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Cebola\",\n  \"categoria\": \"TEMPEROS\",\n  \"quantidade\": 5,\n  \"validade\": \"2026-12-05\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('201 Created', () => pm.response.to.have.status(201));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "GET listar todas",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/food",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "food"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('tem 14+ comidas', () => pm.expect(pm.response.json().length).to.be.at.least(14));"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
